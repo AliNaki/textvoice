@@ -11,7 +11,7 @@ def index():
         sentence = request.form['sentence']
 
         
-        text_speech = pyttsx3.init(driverName='espeak')
+        text_speech = pyttsx3.init()
 
         text_speech.setProperty('rate', 116)
         voices = text_speech.getProperty('voices')
